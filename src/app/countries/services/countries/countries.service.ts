@@ -63,6 +63,7 @@ export class CountriesService {
       const request = this.getCountryByAlphaCode(code);
       countriesRequest.push(request);
     });
+
     return combineLatest( countriesRequest);
 
 
